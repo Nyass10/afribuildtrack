@@ -1,27 +1,42 @@
 <section class="request-access">
     <div class="container">
         <div class="form-wrapper">
-            <h2 class="section-title">Request Access</h2>
-            <p class="section-description">Submit your company details to start using AfriBuildTrack</p>
-            <form action="/api/request-access" method="POST">
+
+            <h2 id="request-access-title" class="section-title">Request Access</h2>
+            <p class="section-description">
+                Submit your company details to start using AfriBuildTrack
+            </p>
+
+            <form action="/api/request-access" method="POST" aria-labelledby="request-access-title">
+
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
                 </div>
+
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
+
                 <div class="form-group">
                     <label for="company">Company Name</label>
-                    <input type="text" id="company" name="company" required>
+                    <input type="text" id="company" name="company" autocomplete="organization" required>
                 </div>
+
                 <div class="form-group">
-                    <label for="usecase">How do you plan to use AfriBuildTrack?</label>
-                    <textarea name="usecase" id="usecase" rows="4"></textarea>
+                    <label for="usecase">
+                        How do you plan to use AfriBuildTrack?
+                    </label>
+                    <textarea id="usecase" name="usecase" rows="4"></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Request Access</button>
+
+                <button type="submit" class="submit-btn">
+                    Request Access
+                </button>
+
             </form>
+
         </div>
     </div>
 </section>
