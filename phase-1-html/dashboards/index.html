@@ -10,34 +10,47 @@
 <body>
     <div class="dashboard-layout">
         <aside class="dashboard-sidebar">
-            <nav class="sidebar-navigation" aria-label="Main Navigation">
-                <a href="/dashboard" class="sidebar-brand">
-                    AfriBuildTrack
-                </a>
-                <ul class="sidebar-menu">
-                    <li><a href="#" aria-current="page">Dashboard</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Reports</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <nav class="sidebar-navigation" aria-label="Main Navigation">
+                    <a href="/dashboard" class="sidebar-brand">
+                        AfriBuildTrack
+                    </a>
+                    <ul class="sidebar-menu">
+                        <li><a href="#" aria-current="page">Dashboard</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
         </aside>
-        <main class="dashboard-main">
-            <header class="topbar">
-                <div class="topbar-actions">
-                    <button>Search</button>
-                    <button>Notifications</button>
-                    <button>Profile</button>
+        <div class="dashboard-main-area">
+            <header class="dashboard-topbar">
+                <div class="container">
+                    <div class="topbar-actions-wrapper">
+                        <button>Search</button>
+                        <button>Notifications</button>
+                        <button>Profile</button>
+                    </div>
                 </div>
             </header>
-            <section class="dashboard-section">
-                <header class="page-header">
-                    <h1>Dashboard Overview</h1>
-                </header>
-            </section>
-        </main>
+            <main class="dashboard-main">
+                <div class="container">
+                    <section class="dashboard-section">
+                        <header class="section-header">
+                            <h1 class="section-title">Dashboard Overview</h1>
+                        </header>
+                    </section>
+                    <section class="dashboard-section">
+                        <header class="section-header">
+                            <h2 class="section-title">Active Projects</h2>
+                        </header>
+                    </section>
+                </div>
+            </main>
+        </div>
     </div>
 </body>
 
